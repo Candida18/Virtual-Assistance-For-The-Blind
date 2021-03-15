@@ -1,0 +1,38 @@
+body{
+	background-color: #0f121f;
+	background-image: url(bg1.jpg);
+	background-repeat: no-repeat;
+	/*color: #fff;*/
+	margin: 0;
+	padding:0;
+	/*opacity: 0.8;
+    filter: alpha(opacity=80); */
+	background-position: center center;
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+}
+
+body *{
+	font-family: verdana;
+}
+/*
+div.any{
+	
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,h3,h4,h5{
+	font-weight: normal;
+	margin: 0;
+}
+
+a,a:hover,a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+*/
