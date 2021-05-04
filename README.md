@@ -1,10 +1,10 @@
 # Virtual Assistance For The Blind
 
 <h3 align="left">ABSTRACT : </h3>
-<p align="left">One of the mostly used forms of communication among the people is Email. Lot of confidential and urgent information is exchanged over emails in today’s time. There are about 253 million visually impaired people worldwide. These visually impaired people are facing a problem of communication. Since, 
+<p align="justify">One of the mostly used forms of communication among the people is Email. Lot of confidential and urgent information is exchanged over emails in today’s time. There are about 253 million visually impaired people worldwide. These visually impaired people are facing a problem of communication. Since, 
 technology is growing day by day, these visually challenged people feel that they are more challenged.</p>
 
-<p align="left">So, we proposed a Voice based Email System using AI that will make email system very easily accessible to visually challenged people and also help society. Accessibility is the most important feature that is considered while developing this system. </p>
+<p align="justify">So, we proposed a Voice based Email System using AI that will make email system very easily accessible to visually challenged people and also help society. Accessibility is the most important feature that is considered while developing this system. </p>
 
 <!--[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)-->
 
