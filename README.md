@@ -1,4 +1,4 @@
-# Voice Based Email For The Blind
+# Virtual Assistance For The Blind
 
 <h3 align="left">ABSTRACT : </h3>
 <p align="left">One of the mostly used forms of communication among the people is Email. Lot of confidential and urgent information is exchanged over emails in today’s time. There are about 253 million visually impaired people worldwide. These visually impaired people are facing a problem of communication. Since, 
