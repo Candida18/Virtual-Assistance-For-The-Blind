@@ -1,0 +1,86 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+    <body onmousedown = "SendPostRequestHome(event)" >
+	
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+			<div class="container"><a class="navbar-brand" style="font-size:150%;">VOICE BASED EMAIL FOR THE BLIND</a>
+				
+			</div>
+		</nav>
+		<header class="masthead text-center text-white">
+			<div class="masthead-content">
+				<div class="container">
+					<h1  style="margin-top:-60px; font-size:60px;color: black;" >LOGIN HERE</h1>
+					
+				<form action="homepage/login.html" method="POST">
+					<br><br><br><br>
+					<div class="container" >
+						
+						
+						<div class="login" id = "here">
+							<script> 
+								$(document).ready(function(){
+								setInterval(function(){
+									  $("#here").load(window.location.href + " #here" );
+								}, 1000);
+								});
+								</script>
+							
+							{% csrf_token %}
+							  <h3 style="color: black;text-align: left;margin-left: 10%;">Email:</h3>
+					
+							<input type="text" placeholder="Email" name="email"required value={{detail.email}} >
+					
+							  <br><br>
+							  <h3 style="color: black;text-align: left;margin-left: 10%;">Password: </h3>
+							 <input type="password" placeholder="Password" name="password"required value={{detail.password}} >
+					
+							   <a href="options.html"> 
+								<input href="options.html"class="btn btn-primary btn-xl rounded-pill mt-5" role="button" type="submit" value="LOGIN"style="background-color: black;"></a>
+							  <br>
+							  
+							  
+							</div>
+						</div>							   
+					</div>
+				</div>
+			</form>
+				</div>
+			</div>
+			<div class="bg-circle-1 bg-circle"></div>
+			<div class="bg-circle-2 bg-circle"></div>
+			<div class="bg-circle-3 bg-circle"></div>
+			<div class="bg-circle-4 bg-circle"></div>
+		</header>
+
+		<script>
+		
+			function SendPostRequestHome(event){
+				
+				$.ajax({
+				url: "{% url 'homepage:login' %}",
+				method: 'POST',
+				data: { 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+				success: function (data) {
+					
+					if(data.result == 'success'){
+						
+						window.location = "{% url 'homepage:options' %}";
+					}
+					else if(data.result == 'failure'){
+						window.location = "{% url 'homepage:login' %}";
+					}
+				}
+			});
+			}
+			</script>
+			
+			<footer class="py-5 bg-black">
+				<div class="container">
+					<p class="text-center text-white m-0 small">Copyright&nbsp;© Voice Based Email&nbsp;</p>
+				</div>
+			</footer>
+
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+	<body onmousedown = "SendPostRequestTrash(event)">
+		<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+			<div class="container"><a class="navbar-brand" style="font-size:150%;">VOICE BASED EMAIL FOR THE BLIND</a>
+				
+			</div>
+		</nav>
+		<header class="masthead text-left text-white">
+			<div class="masthead-content">
+				<div class="container" >
+				<center>
+					<h4 class="masthead-heading mb-0" style = "margin-top: -100px; font-size: 60px;color:black;">TRASH FOLDER</h4>			
+						<br>
+						<h2> What would you like to do? <h2><br>
+					
+				</center>
+				
+				<table align="center" >
+				<tr>
+						<td>
+							
+								<input href="inbox.html"class="btn btn-primary btn-xl rounded-pill mt-5"
+								 role="button"
+								 style="width: 250px; background-color: black;" type="submit" 
+								value="SEARCH" >
+						</td>
+
+					</tr>
+						
+					<tr>
+						<td>
+							
+								<input href="options.html"class="btn btn-primary btn-xl rounded-pill mt-5" 
+								role="button" 
+								style="width: 250px; background-color: black;" type="submit"  
+								value="BACK">
+						</td>
+					</tr>
+						
+					
+					<tr>
+						<td>
+							
+								<input href="login.html"class="btn btn-primary btn-xl rounded-pill mt-5"
+								role="button"
+								style="width: 250px; background-color: black;"  type="submit" 
+								value="LOGOUT">
+						</td>
+					</tr>
+						
+
+				</table>
+			
+				</div>
+			</div>
+			<div class="bg-circle-1 bg-circle"></div>
+			<div class="bg-circle-2 bg-circle"></div>
+			<div class="bg-circle-3 bg-circle"></div>
+			<div class="bg-circle-4 bg-circle"></div>
+		</header>
+		<footer class="py-5 bg-black">
+			<div class="container">
+				<p class="text-center text-white m-0 small">Copyright&nbsp;© Voice Based Email&nbsp;</p>
+			</div>
+		</footer>
+	<script>
+	function SendPostRequestTrash(event){
+		$.ajax({
+        url: "{% url 'homepage:trash' %}",
+        method: 'POST',
+        data: { 'csrfmiddlewaretoken': '{{ csrf_token }}'},
+        success: function (data) {
+			if(data.result == 'success'){
+				window.location = "{% url 'homepage:options' %}";
+			}
+			else if(data.result == 'logout'){
+				window.location = "{% url 'homepage:login' %}";
+			}
+        }
+    });
+	}
+	</script>
+
+{% endblock %}
