@@ -1,14 +1,14 @@
-# Virtual Assistance For The Blind
+# Virtual Assistance For The Blind 
 
-<h3 align="left">ABSTRACT : </h3>
+## ABSTRACT : 
 <p align="justify">One of the most used forms of communication among people is Email. A lot of confidential and urgent information is exchanged over emails in today’s time. There are about 253 million visually impaired people worldwide. These visually impaired people are facing a problem of communication. Since technology is growing day by day, these visually challenged people feel that they are more challenged.</p>
 
 <p align="justify">
-So, we proposed a Voice-based Email System using AI that will make the email system very easily accessible to visually challenged people and also help society. Accessibility is the most important feature that is considered while developing this system. </p>
+So, we proposed a Voice-based Email System using AI that will make the email system very easily accessible to visually challenged people and also help society. Accessibility is the most important feature that is considered while developing this system. </p><br/>
 
 <!--[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)-->
 
-<h3 align="left"> SOFTWARE REQUIREMENTS : </h3>
+## SOFTWARE REQUIREMENTS : 
 <ul type="square">
   <li> <b> Operating System : </b> Any version of Windows NT family (4.0 &above) </li>
    &emsp;
@@ -52,7 +52,14 @@ So, we proposed a Voice-based Email System using AI that will make the email sys
   </a>
 </p>
    </li>
-           
+ </ul><br/>
+ 
+## RUN USING :
+`python manage.py runserver`
+
+
+## RESULTS :
+![caption]()
 
 
 
