@@ -58,8 +58,7 @@ So, we proposed a Voice-based Email System using AI that will make the email sys
 `python manage.py runserver`
 
 
-## RESULTS :
-![caption]()
+
 
 
 
