@@ -1,6 +1,13 @@
 # Virtual Assistance For The Blind 
-  
-![](https://img.shields.io/github/stars/Candida18/Virtual-Assistance-For-The-Blind?style=flat-square) &emsp; ![](https://img.shields.io/github/forks/Candida18/Virtual-Assistance-For-The-Blind?style=flat-square) &emsp; 
+
+<br>
+
+![](https://img.shields.io/github/issues/Candida18/Virtual-Assistance-For-The-Blind?style=for-the-badge) &emsp;  &emsp;
+![](https://img.shields.io/github/forks/Candida18/Virtual-Assistance-For-The-Blind?style=for-the-badge) &emsp;  &emsp; 
+![](https://img.shields.io/github/stars/Candida18/Virtual-Assistance-For-The-Blind?style=for-the-badge) &emsp;  &emsp; 
+![](https://img.shields.io/github/license/Candida18/Virtual-Assistance-For-The-Blind?style=for-the-badge) &emsp; 
+
+<br>
 
 ## ABSTRACT : 
 <p align="justify">One of the most used forms of communication among people is Email. A lot of confidential and urgent information is exchanged over emails in today’s time. There are about 253 million visually impaired people worldwide. These visually impaired people are facing a problem of communication. Since technology is growing day by day, these visually challenged people feel that they are more challenged.</p>
